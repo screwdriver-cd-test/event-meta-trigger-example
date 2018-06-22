@@ -27,7 +27,6 @@ def post_event(jwt):
     };
 
     response = requests.post(url, headers=header, json=payload);
-
     if response.status_code != 201:
         print('[ERROR] Failed to create event, got status code {0}'.format(response.status_code))
         sys.exit(1)
