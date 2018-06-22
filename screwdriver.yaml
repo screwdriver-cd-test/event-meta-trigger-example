@@ -5,3 +5,5 @@ jobs:
       - install: pip install requests
       - trigger: python trigger.py
     requires: [~pr, ~commit]
+    secrets:
+      - API_TOKEN
