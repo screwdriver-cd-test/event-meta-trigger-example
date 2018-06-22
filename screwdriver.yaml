@@ -1,0 +1,6 @@
+jobs:
+  trigger-event-meta:
+    image: node:6
+    steps:
+      - hello: echo hello
+    requires: [~pr, ~commit]
