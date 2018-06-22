@@ -1,6 +1,7 @@
 jobs:
-  trigger-event-meta:
+  main:
     image: python:3
     steps:
-      - hello: echo hello
+      - install: sudo pip install requests
+      - trigger: python trigger.py
     requires: [~pr, ~commit]
