@@ -33,6 +33,10 @@ def post_event(jwt):
         print('[ERROR] Failed to create event, got status code {0}'.format(response.status_code))
         sys.exit(1)
 
+    return response.status_code
+
 if __name__ == '__main__':
     jwt = get_JWT();
-    post_event(jwt);
+    status_code = post_event(jwt);
+
+    print ('OK', status_code);
