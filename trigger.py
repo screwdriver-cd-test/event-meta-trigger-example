@@ -1,6 +1,5 @@
 import os
 import sys
-import json
 import requests
 
 api_url = 'https://api.screwdriver.cd/v4/';
