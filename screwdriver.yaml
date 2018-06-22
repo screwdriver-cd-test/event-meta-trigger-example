@@ -1,6 +1,6 @@
 jobs:
   trigger-event-meta:
-    image: node:6
+    image: python:3
     steps:
       - hello: echo hello
     requires: [~pr, ~commit]
