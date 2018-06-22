@@ -27,10 +27,6 @@ def post_event(jwt):
         }
     };
 
-    print('URL: ', url);
-    print('Header', header);
-    print('Payload:', payload);
-
     response = requests.post(url, headers=header, json=payload);
 
     if response.status_code != 201:
